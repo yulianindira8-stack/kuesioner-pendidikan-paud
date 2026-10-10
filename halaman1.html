@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minat terhadap Profesi Guru PAUD</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+
+  <main class="container">
+    <div class="top-banner"></div>
+
+    <div class="progress-info">
+      <span>Bagian 1 dari 3</span>
+      <span>33%</span>
+    </div>
+    <div class="progress-track">
+      <div class="progress-fill" style="width:33.33%"></div>
+    </div>
+
+    <section class="card">
+      <h1>Minat dan Kesiapan Menjadi Guru PAUD</h1>
+      <p class="subtitle">
+        Bagian ini membahas minat dan pandangan terhadap profesi guru PAUD.
+      </p>
+      <hr>
+
+      <form onsubmit="savePage1(event)">
+        <div class="question">
+          <label for="nama">
+            1. Nama responden <span class="required">*</span>
+          </label>
+          <input id="nama" type="text" placeholder="Masukkan nama" required>
+        </div>
+
+        <div class="question">
+          <p class="question-title">
+            2. Apakah kamu tertarik dengan dunia pendidikan anak usia dini?
+            <span class="required">*</span>
+          </p>
+          <label class="option"><input type="radio" name="minat" value="Sangat tertarik" required> Sangat tertarik</label>
+          <label class="option"><input type="radio" name="minat" value="Tertarik"> Tertarik</label>
+          <label class="option"><input type="radio" name="minat" value="Cukup tertarik"> Cukup tertarik</label>
+          <label class="option"><input type="radio" name="minat" value="Kurang tertarik"> Kurang tertarik</label>
+        </div>
+
+        <div class="question">
+          <p class="question-title">
+            3. Menurut kamu, apa yang paling penting dimiliki seorang guru PAUD?
+            <span class="required">*</span>
+          </p>
+          <label class="option"><input type="radio" name="kompetensi" value="Kesabaran" required> Kesabaran</label>
+          <label class="option"><input type="radio" name="kompetensi" value="Kreativitas"> Kreativitas</label>
+          <label class="option"><input type="radio" name="kompetensi" value="Komunikasi"> Kemampuan berkomunikasi</label>
+          <label class="option"><input type="radio" name="kompetensi" value="Tanggung jawab"> Tanggung jawab</label>
+        </div>
+
+        <div class="question">
+          <p class="question-title">
+            4. Apakah kamu merasa sabar ketika menghadapi anak kecil?
+            <span class="required">*</span>
+          </p>
+          <label class="option"><input type="radio" name="sabar" value="Sangat sabar" required> Sangat sabar</label>
+          <label class="option"><input type="radio" name="sabar" value="Cukup sabar"> Cukup sabar</label>
+          <label class="option"><input type="radio" name="sabar" value="Tergantung situasi"> Tergantung situasi</label>
+          <label class="option"><input type="radio" name="sabar" value="Belum tahu"> Belum tahu</label>
+        </div>
+
+        <div class="button-row">
+          <button type="button" class="secondary-btn"
+            onclick="nextPage('index.html')">Kembali</button>
+          <button type="submit" class="primary-btn">Berikutnya →</button>
+        </div>
+      </form>
+    </section>
+
+    <p class="footer">Kuesioner Pendidikan • Bagian 1</p>
+  </main>
+</body>
+</html>

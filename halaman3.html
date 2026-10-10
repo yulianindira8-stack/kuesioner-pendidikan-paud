@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pertanyaan Terakhir ❤️</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+
+  <main class="container">
+    <div class="top-banner"></div>
+
+    <div class="progress-info">
+      <span>Bagian 3 dari 3</span>
+      <span>100%</span>
+    </div>
+    <div class="progress-track">
+      <div class="progress-fill" style="width:100%"></div>
+    </div>
+
+    <section class="card">
+      <h1>Terima Kasih! Ada Satu Pertanyaan Terakhir ❤️</h1>
+      <p class="subtitle">
+        Terima kasih sudah mengisi kuesioner sampai akhir.
+        Sebelum selesai, aku ingin bertanya sesuatu yang lebih personal.
+      </p>
+
+      <form onsubmit="savePage3(event)">
+        <div class="question">
+          <label for="perasaan">Apa pendapatmu tentang kedekatan kita selama ini?</label>
+          <textarea id="perasaan" rows="3" placeholder="Tulis jawabanmu di sini..."></textarea>
+        </div>
+
+        <div class="love-question">
+          <div class="emoji-big">💗</div>
+          <h2>Aku mau jujur tentang perasaanku...</h2>
+          <p>
+            Aku senang bisa mengenalmu lebih dekat.
+            Jadi, aku mau bertanya...
+          </p>
+          <h2>Kamu mau jadi pacarku?</h2>
+
+          <label class="option love-option">
+            <input type="radio" name="jawabanCinta" value="Mau ❤️" required>
+            Mau ❤️
+          </label>
+          <label class="option love-option">
+            <input type="radio" name="jawabanCinta" value="Tidak 🙈">
+            Tidak 🙈
+          </label>
+        </div>
+
+        <div class="button-row">
+          <button type="button" class="secondary-btn"
+            onclick="nextPage('halaman2.html')">← Kembali</button>
+          <button type="submit" class="primary-btn">Kirim Jawaban 💌</button>
+        </div>
+      </form>
+    </section>
+
+    <p class="footer">Terima kasih sudah menjawab dengan jujur 💜</p>
+  </main>
+</body>
+</html>

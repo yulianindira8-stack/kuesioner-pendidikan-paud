@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pandangan terhadap Profesi Guru PAUD</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+
+  <main class="container">
+    <div class="top-banner"></div>
+
+    <div class="progress-info">
+      <span>Bagian 2 dari 3</span>
+      <span>66%</span>
+    </div>
+    <div class="progress-track">
+      <div class="progress-fill" style="width:66.66%"></div>
+    </div>
+
+    <section class="card">
+      <h1>Pandangan terhadap Profesi Guru PAUD</h1>
+      <p class="subtitle">
+        Bagian ini membahas metode pembelajaran dan karakter seorang guru PAUD.
+      </p>
+      <hr>
+
+      <form onsubmit="savePage2(event)">
+        <div class="question">
+          <p class="question-title">
+            5. Metode pembelajaran apa yang paling efektif untuk anak usia dini?
+            <span class="required">*</span>
+          </p>
+          <label class="option"><input type="radio" name="metode" value="Belajar sambil bermain" required> Belajar sambil bermain</label>
+          <label class="option"><input type="radio" name="metode" value="Bernyanyi dan bercerita"> Bernyanyi dan bercerita</label>
+          <label class="option"><input type="radio" name="metode" value="Praktik langsung"> Praktik langsung dan kegiatan kreatif</label>
+          <label class="option"><input type="radio" name="metode" value="Gabungan metode"> Gabungan beberapa metode</label>
+        </div>
+
+        <div class="question">
+          <p class="question-title">
+            6. Bagaimana sebaiknya guru menghadapi anak yang sulit diatur?
+            <span class="required">*</span>
+          </p>
+          <label class="option"><input type="radio" name="menghadapi" value="Sabar dan memahami" required> Tetap sabar dan memahami anak</label>
+          <label class="option"><input type="radio" name="menghadapi" value="Memberikan arahan"> Memberikan arahan secara perlahan</label>
+          <label class="option"><input type="radio" name="menghadapi" value="Mengajak bermain"> Mengalihkan perhatian melalui permainan</label>
+          <label class="option"><input type="radio" name="menghadapi" value="Diskusi dengan orang tua"> Berdiskusi dengan orang tua jika diperlukan</label>
+        </div>
+
+        <div class="question">
+          <p class="question-title">
+            7. Karakter apa yang paling penting dimiliki seorang guru PAUD?
+            <span class="required">*</span>
+          </p>
+          <label class="option"><input type="radio" name="karakter" value="Penyayang" required> Penyayang dan peduli</label>
+          <label class="option"><input type="radio" name="karakter" value="Kreatif"> Kreatif dan inovatif</label>
+          <label class="option"><input type="radio" name="karakter" value="Disiplin"> Disiplin dan bertanggung jawab</label>
+          <label class="option"><input type="radio" name="karakter" value="Semua penting"> Semua karakter tersebut penting</label>
+        </div>
+
+        <div class="question">
+          <label for="pendapat">
+            8. Menurut kamu, apa tantangan terbesar menjadi guru PAUD?
+          </label>
+          <textarea id="pendapat" rows="3" placeholder="Tuliskan pendapat kamu..."></textarea>
+        </div>
+
+        <div class="button-row">
+          <button type="button" class="secondary-btn"
+            onclick="nextPage('halaman1.html')">← Kembali</button>
+          <button type="submit" class="primary-btn">Berikutnya →</button>
+        </div>
+      </form>
+    </section>
+
+    <p class="footer">Kuesioner Pendidikan • Bagian 2</p>
+  </main>
+</body>
+</html>
